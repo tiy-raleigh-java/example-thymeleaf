@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+}
+
+span {
+  padding: 0;
+  margin: 0;
+  border: 0px;
+}
+
+p {
+  background-color: yellow;
+}

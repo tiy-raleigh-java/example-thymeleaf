@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8" />
+    <title>Greetings!</title>
+    <link rel="stylesheet" href="../static/css/styles.css" th:href="${'/css/styles.css'}" />
+  </head>
+  <body>
+    <h1>Hello, <span th:text="${name}">Jamie</span>!</h1>
+
+    <h2>Your lucky numbers</h2>
+
+    <ul>
+      <li th:each="luckyNumber : ${luckyNumbers}" th:text="${luckyNumber}">1</li>
+      <li th:remove="all">42</li>
+      <li th:remove="all">157</li>
+      <li th:remove="all">-12</li>
+    </ul>
+
+    <p>This is my favorite image:</p>
+    <img src="../static/images/sneeze.gif" th:src="${'/images/sneeze.gif'}" />
+    <p>
+      <a href="goodbye.html" th:href="${'/goodbye'}">Bye, <span th:text="${name}">Jamie</span>!</a>
+    </p>
+  </body>
+</html>

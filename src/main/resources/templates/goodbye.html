@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8" />
+    <title>Bye!</title>
+    <link rel="stylesheet" href="../static/css/styles.css" th:href="${'/css/styles.css'}" />
+  </head>
+  <body>
+    <h1>See you!</h1>
+
+    <p>You are leaving as of <span th:text="${time}">10:44am</span></p>
+
+    <img src="../static/images/sarah.jpg" th:src="${'/images/sarah.jpg'}"/>
+
+    <p>
+      <a href="index.html" th:href="${'/'}">Start over</a>
+    </p>
+  </body>
+</html>
